@@ -57,10 +57,10 @@
             <div class="modalContent">
                 <h2>Novo cliente</h2>
             <form id="form">
-                <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Digite o nome" required>
-                <input type="email" id="email" class="modal-field" placeholder="Digite o e-mail" required>
-                <input type="text" id="telefone" class="modal-field" placeholder="Digite o telefone" required>
-                <input type="text" id="salario" class="modal-field salario" placeholder="Salário planejado" required>
+                <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Digite o nome" oninput="validName()" required>
+                <input type="email" id="email" class="modal-field" placeholder="Digite o e-mail" oninput="validEmail()" required>
+                <input type="text" id="telefone" class="modal-field" placeholder="Digite o telefone" oninput="validTelefone()" required>
+                <input type="text" id="salario" class="modal-field salario" placeholder="Salário planejado" oninput="validSalario()" required>
             </form>
             <div class="ContentFooter">
                 <button class="button green" id="salvar">Salvar</button>
